@@ -11,8 +11,8 @@ variable "mysql_server_port" {
 
 variable "connection_use_tls" {
   description = "Set if TLS should be used for db connection. One of `false`, `true`, or `skip-verify`. See https://www.terraform.io/docs/providers/mysql/index.html#tls"
-  type        = string
-  default     = "false"
+  type        = bool
+  default     = false
 }
 
 variable "mysql_server_admin_login" {
